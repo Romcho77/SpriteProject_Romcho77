@@ -1,0 +1,882 @@
+
+
+body{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+   
+    
+}
+.firstPage{
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(./../img/bordMerNight.gif);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.logoTitle{
+    width: 100%;
+    height: 100%;
+}
+.logoTitleDiv{
+    position: absolute;
+    left: -15px;
+    width: 100px;
+    height: 100px;
+}
+
+
+.menu{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    height: 20%;
+    opacity: 0.8;
+    background: linear-gradient(90deg, rgba(2,0,36,0.2) 0%, rgba(7, 250, 84, 0.2) 35%, rgba(0,212,255,0.2) 100%);
+}
+.title:hover{
+    color: aqua;
+}
+
+.choose{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    color: #313E75;
+    transition: 0.4s;
+}
+.choose:hover{
+    color: aqua;
+}
+.arrowDown{
+    color: rgb(255, 81, 0);
+    font-size: 40px;
+    transition: 0.4s;
+}
+.arrowDown:hover{
+    color: aqua;
+    opacity: 1;
+}
+
+.menu>h1{
+    text-align: center;
+    color: rgb(255, 89, 0);
+    font-weight: 800;
+    transition: 0.4s;
+}
+
+.carouseDiv{
+    background-color: blueviolet;
+}
+
+.item1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.leftPokemons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    width: 100%;
+    
+}
+.leftPokemonsText{
+    margin-left: 150px;
+    width: 22%;
+    color: #316D7B;
+    transition: 0.4s;
+}
+
+.leftPokemonsText:hover{
+
+    color: aqua;
+}
+.leftPokemonsDiv{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+    gap: 20px;
+    perspective: 1000px;
+    /* background-color: black;
+    background: linear-gradient(90deg, rgba(2,0,36,0.5) 0%, rgba(250, 193, 7, 0.5) 35%, rgba(0,212,255,0.5) 100%); */
+
+}
+.personnages{
+    transform-style: preserve-3d;
+    transform: scale(1);
+    transition: transform .5s;
+}
+.personnages:active{
+    transform: scale(0.97);
+    transition: transform .2s;
+}
+.personnages .flip{
+    transform: rotateY('180deg');
+}
+
+#pokemon1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    border: 3px solid black;
+    width: 300px;
+    height: 350px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+}
+#pokemon1:hover{
+    background: linear-gradient(rgba(19, 23, 239, 0.2), rgba(99, 230, 13, 0.2));
+}
+
+#pokemon1:hover>img{
+    transform: scale(1.5);
+    /* transform: translateY(-50px); */
+}
+
+#pokemon2{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    border: 3px solid black;
+
+    width: 300px;
+    height: 350px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+#pokemon2:hover{
+    background: linear-gradient(rgba(239, 19, 166, 0.401), rgba(99, 230, 13, 0.2));
+}
+#pokemon2:hover>img{
+    transform: scale(1.5);
+    /* transform: translateY(-50px); */
+}
+.imagePokemon2{
+    margin-left: 50px;
+}
+
+.pokemonName{
+    color: beige;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.pokemonName1:hover{
+    color: #0c1bf0;
+}
+.pokemonName2:hover{
+    color: #FFD600;
+}
+.pokemonName3:hover{
+    color: #CE3131;
+}
+.pokemonName4:hover{
+    color: #a1bafa;
+}
+
+.chooseButton{
+    font-weight: bold;
+    width: 150px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background: none;
+    transition: 0.3s;
+    color: beige;
+    
+}
+.chooseButton:hover{
+    background-color: aqua;
+}
+
+.imagePokemon{
+    width: 150px;
+    height: 150px;
+    transition: 0.5s;
+}
+
+#pokemon3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    border: 3px solid black;
+
+    transition: 0.5s;
+    width: 300px;
+    height: 350px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+#pokemon3:hover{
+    background: linear-gradient(rgba(239, 199, 19, 0.2), rgba(99, 230, 13, 0.2));
+}
+#pokemon3:hover>img{
+    transform: scale(1.5);
+    /* transform: translateY(-50px); */
+}
+
+#pokemon4{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    border: 3px solid black;
+
+    width: 300px;
+    height: 350px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+}
+#pokemon4:hover{
+    background: linear-gradient(rgba(240, 53, 32, 0.61), rgba(99, 230, 13, 0.2));
+}
+#pokemon4:hover>img{
+    transform: scale(1.5);
+    /* transform: translateY(-50px); */
+}
+
+.imagePokemon4{
+    margin-left: 40px;
+}
+
+
+.footer{
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    height: 20%;
+    opacity: 0.8;
+    background: linear-gradient(90deg, rgba(2,0,36,0.5) 0%, rgba(245,250,7,0.5) 35%, rgba(0,212,255,0.5) 100%);
+}
+
+/*! :::::::::::::::::second page::::::::::::::: */
+
+.secondPage{
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(./../img/vietnamBg.gif) no-repeat;
+    /* filter: brightness(1); */
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+canvas{
+    background-color: bisque;
+}
+
+position{
+    width: 100%;
+    height: 100%;
+    letter-spacing: normal;
+    align-items: center;
+    justify-content: center;
+}
+.afterCanvas{
+    /* background-color: burlywood; */
+    width: 100%;
+    height: 100%;
+}
+
+.img1{
+    /* position: absolute;
+    top: 300px;
+    left: 400px; */
+
+    width: 170px;
+    height: 190px;
+    transition: 0.4s;
+
+}
+.img1:hover{
+    
+    transform: translate(70px,0px);
+}
+
+
+.divImg1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 180px;
+    left: 300px;
+    border: 2px solid rgb(0, 255, 64);
+    border-radius: 30px;
+    gap: 10px;
+
+    padding: 2%;
+    width: 340px;
+    height: 330px;
+    transition: 0.4s;
+    overflow: hidden;
+    background-color: #31b9ce3b ;
+
+}
+
+.combatTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #056e13;
+    background: linear-gradient(90deg, rgba(24, 13, 231, 0.5) 0%, rgba(47, 250, 7, 0.705) 35%, rgba(0,212,255,0.5) 100%);;
+}
+h1:hover{
+    color: aqua;
+}
+
+.backArrow{
+    width: 5%;
+    font-size: 20px;
+    text-align: left;
+}
+.backArrow>i{
+    margin-left: 10px;
+}
+.arrowBackI{
+    color: #c2600f;
+}
+
+.backArrow:hover .arrowBackI{
+    color: aqua;
+}
+
+h1{
+    padding: 0;
+    margin: 0;
+    width: 80%;
+    text-align: center;
+    color: #863a00;
+    transition: 0.4s;
+    
+}
+
+
+.img2{
+    display: none;  
+    width: 200px;
+    height: 200px;
+}
+
+.divImg3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+
+    
+    overflow: hidden;
+    left: 950px;
+    top: 180px;
+    gap: 10px;
+    /* border: none; */
+    padding: 2%;
+    border: 2px solid yellow;
+    border-radius: 30px;
+    width: 340px;
+    height: 330px;
+    transition: 0.4s;
+    background-color: #31b9ce3b;
+    
+}
+.img3:hover{
+    
+    transform: translate(-60px,0px);
+    /* transform: translateX(-30px); */
+    /* .img3:{
+        border: 3px dotted aquamarine;
+    } */
+    
+}
+
+.img3{
+    /* position: absolute;
+    left: 950px;
+    top: 190px; */
+    margin-left: 80px;
+    transition: 0.4s;
+    width: 300px;
+    height: 200px;
+    
+}
+.versusDiv{
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    left: 720px;
+    top: 250px;
+    animation: START 5s infinite;
+
+}
+
+.versusImg{
+    width: 100%;
+    height: 100%;
+}
+
+.hpHero1{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    width: 100%;
+    height: 20%;
+}
+.hpHero2{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    width: 100%;
+    height: 20%;
+}
+.hpHero3{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    width: 100%;
+    height: 20%;
+    margin-top: 30px;
+}
+
+
+.heart{
+    color: #d50b0b;
+    transition: 0.4s;
+    font-size: 30px;
+    
+}
+.heart:hover{
+    transform: translateY(-10px);
+    color: aqua;
+    
+}
+.heart1{
+    color: #adfaa1;
+}
+.heart3:hover{
+    transform: translateY(-10px);
+    color: rgba(173, 92, 0, 0.986);
+    filter: brightness(1.4);
+}
+
+
+.img3Title{
+    font-size: 30px;
+    font-weight: 900;
+    color: #d50b0b;
+    transition: 0.4s;
+}
+.img3Title:hover{
+    transform: translateX(-30px);
+    font-weight: 900;
+    color: aqua;
+}
+.img1Title{
+    font-size: 30px;
+    font-weight: 900;
+    color: #adfaa1;
+    transition: 0.4s;
+}
+.img1Title:hover{
+    transform: translateX(30px);
+    font-weight: 900;
+    color: aqua;
+}
+
+/* BUTTON START */
+
+.container {
+    position: absolute;
+    left: 9%;
+    top: 83%;
+    color: white;
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 120px;
+    /* background: #27282c; */
+  }
+  
+  .button {
+    position: relative;
+    padding: 16px 30px;
+    font-size: 1.5rem;
+    color: var(--color);
+    border: 2px solid rgba(6, 255, 255, 0.699);
+    border-radius: 4px;
+    text-shadow: 0 0 15px var(--color);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    transition: 0.5s;
+    z-index: 1;
+    font-weight: bolder;
+  }
+  
+  .button:hover {
+    color: #fdfdfd;
+    border: 2px solid rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0px var(--color);
+  }
+  
+  .button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--color);
+    z-index: -1;
+    transform: scale(0);
+    transition: 0.5s;
+  }
+  
+  .button:hover::before {
+    transform: scale(1);
+    transition-delay: 0.5s;
+    box-shadow: 0 0 10px var(--color),
+      0 0 30px var(--color),
+      0 0 60px var(--color);
+  }
+  
+  .button span {
+    position: absolute;
+    background: var(--color);
+    pointer-events: none;
+    border-radius: 2px;
+    box-shadow: 0 0 10px var(--color),
+      0 0 20px var(--color),
+      0 0 30px var(--color),
+      0 0 50px var(--color),
+      0 0 100px var(--color);
+    transition: 0.5s ease-in-out;
+    transition-delay: 0.25s;
+  }
+  
+  .button:hover span {
+    opacity: 0;
+    transition-delay: 0s;
+  }
+  
+  .button span:nth-child(1),
+  .button span:nth-child(3) {
+    width: 40px;
+    height: 4px;
+  }
+  
+  .button:hover span:nth-child(1),
+  .button:hover span:nth-child(3) {
+    transform: translateX(0);
+  }
+  
+  .button span:nth-child(2),
+  .button span:nth-child(4) {
+    width: 4px;
+    height: 40px;
+  }
+  
+  .button:hover span:nth-child(1),
+  .button:hover span:nth-child(3) {
+    transform: translateY(0);
+  }
+  
+  .button span:nth-child(1) {
+    top: calc(50% - 2px);
+    left: -50px;
+    transform-origin: left;
+  }
+  
+  .button:hover span:nth-child(1) {
+    left: 50%;
+  }
+  
+  .button span:nth-child(3) {
+    top: calc(50% - 2px);
+    right: -50px;
+    transform-origin: right;
+  }
+  
+  .button:hover span:nth-child(3) {
+    right: 50%;
+  }
+  
+  .button span:nth-child(2) {
+    left: calc(50% - 2px);
+    top: -50px;
+    transform-origin: top;
+  }
+  
+  .button:hover span:nth-child(2) {
+    top: 50%;
+  }
+  
+  .button span:nth-child(4) {
+    left: calc(50% - 2px);
+    bottom: -50px;
+    transform-origin: bottom;
+  }
+  
+  .button:hover span:nth-child(4) {
+    bottom: 50%;
+  }
+/* finish start button */
+
+/*! :::::::::::::::::third page::::::::::::::: */
+
+.thirdPage{
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(./../img/vietnamNight.gif) no-repeat;
+    /* filter: brightness(1); */
+    background-size: cover;
+    background-position: center;
+    padding-top: 10px;
+    margin: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.topHps{
+    display: flex;
+    justify-content: center;
+    /* background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)); */
+    height: 7%;
+    width: 100%;
+    
+    gap: 50px;
+    
+}
+.myProgress{
+    height: 100%;
+    width: 47%;
+    border: 5px solid black;
+    background: linear-gradient(rgba(106, 107, 107, 0.4), rgba(126, 129, 129, 0.171));
+}
+
+.progressBar0{
+    height: 100%;
+    width: 97%;
+}
+.progressBar1{
+    height: 100%;
+    width: 97%;
+}
+
+.hpLeft{
+    background: linear-gradient(90deg, rgba(231, 13, 13, 0.774) 0%,rgba(255, 102, 0, 0.664) 30%,rgba(31, 167, 4, 0.705) 60%);
+    /* height: 97%;
+    width: 97%; */
+    
+}
+.hpRight{
+
+    /* background: linear-gradient(90deg, rgba(38, 231, 13, 0.5) 50%, rgba(255, 145, 0, 0.788) 70%, rgb(177, 8, 8) 100%); */
+    background: linear-gradient(90deg, rgba(231, 13, 13, 0.774) 0%,rgba(255, 102, 0, 0.664) 30%,rgba(31, 167, 4, 0.705) 60%);
+}
+
+.battleImage1{
+    position: absolute;
+    top: 55%;
+    left: 18%;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    border: 3px solid black;
+    width: 390px;
+    height: 300px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+    
+}
+.battleImage1:hover{
+    background: linear-gradient(rgba(19, 23, 239, 0.2), rgba(99, 230, 13, 0.2));
+}
+.battleImage1:hover>img{
+    transform: scale(1.4);
+}
+.attacks1{
+    display: flex;
+}
+.chooseAttack{
+    font-weight: bold;
+    width: 120px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background: none;
+    transition: 0.3s;
+    color: beige;
+    
+}
+.chooseAttack:hover{
+    background-color: aqua;
+    color: #313E75;
+}
+
+.soldier1{
+    margin-top: 30px;
+    width: 200px;
+    height: 190px;
+}
+
+.battleImage2{
+    position: absolute;
+    top: 55%;
+    left: 60%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    border: 3px solid black;
+
+    width: 380px;
+    height: 300px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+}
+.battleImage2:hover{
+    background: linear-gradient(rgba(240, 53, 32, 0.61), rgba(99, 230, 13, 0.2));;
+}
+.battleImage2:hover>img{
+    transform : scale(1.3)
+}
+.imageSoldier{
+    width: 150px;
+    height: 150px;
+    transition: 0.5s;
+}
+.soldier2{
+    width: 200px;
+    height: 160px;
+}
+
+/*? SPEECH BOX FOR SECOND SOLDIER*/
+ /* body{
+    background-color: #6e6565;
+  } */
+   .bubble {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    font-family: "Press Start 2P", cursive;
+    font-size: 10px;
+    line-height: 1.3em;
+    background-color: #ffffff52;
+    color: beige;
+    padding: 7px;
+    box-shadow: 0 -4px #fff, 0 -8px #000, 4px 0 #fff, 4px -4px #000, 8px 0 #000, 0 4px #fff, 0 8px #000, -4px 0 #fff, -4px 4px #000, -8px 0 #000, -4px -4px #000, 4px 4px #000;
+    box-sizing: border-box;
+    width: 350px;
+  }
+   .bubble::after {
+    content: "";
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+  }
+   .bubble.shadow {
+    box-shadow: 0 -4px #ffffff38, 0 -8px #000, 4px 0 #fff, 4px -4px #000, 8px 0 #000, 0 4px #fff, 0 8px #000, -4px 0 #fff, -4px 4px #000, -8px 0 #000, -4px -4px #000, 4px 4px #000, 4px 12px rgba(0, 0, 0, 0.1), 12px 4px rgba(0, 0, 0, 0.1), 8px 8px rgba(0, 0, 0, 0.1);
+  }
+   .bubble.large {
+    width: 350px;
+    font-size: 15px;
+    /* text-align: left; */
+    text-transform: uppercase;
+  }
+   .bubble.bottom::after {
+    
+    height: 4px;
+    width: 4px;
+    bottom: -8px;
+    left: 32px;
+    box-shadow: 0 4px #000, 0 8px #000, 0 12px #000, 0 16px #000, -4px 12px #000, -8px 8px #000, -12px 4px #000, -4px 4px #ffffff60, -8px 4px #ffffff59, -4px 8px #ffffff59, -4px 0 #ffffff5b, -8px 0 #ffffff59, -12px 0 #ffffff59;
+}
+
+
+.battleImage3{
+    display: none;
+    width: 80px;
+    height: 100px;
+    position: absolute;
+    left: 65%;
+    top: 78%;
+}
+.battleImage3>img{
+    width: 100%;
+    height: 100%;
+}
+.battleImage4{
+    display: none;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 25%;
+    top: 78%;
+}
+.battleImage4>img{
+    width: 100%;
+    height: 100%;
+}
+.regenerateImage{
+    display: none;
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    left: 27%;
+    top: 75%;
+}
+.regenerateImage>img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
